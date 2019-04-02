@@ -1,0 +1,75 @@
+\section{Newtonian Gravitation}
+Prior to 1686, a great deal of data had been collected on the motions
+of the Moon and planets, but no one had a clear understanding of the
+forces affecting them. In that year, Isaac Newton provided the key
+that unlocked the secrets of the heavens. He knew from the first law
+that a net force had to be acting on the Moon. If it were not, the
+Moon would move in a straight-line path rather than in its almost
+circular orbit around Earth. Newton reasoned that this force arose as
+a result of an attractive force between Moon and Earth, called the
+force of gravity, and that it was the same kind of force that
+attracted objects -- such as apples -- close to the surface of the Earth.
+
+In 1687, Newton published his work on the law of universal gravitation:
+\begin{form}[Force between two objects]
+If two particles with masses $m_1$ and $m_2$ are separated by a distance $r$, then a
+gravitational force acts along a line joining them, with magnitude given by
+$$F=G\frac{m_1m_2}{r^2}$$
+where $G=6.673 \times 10^{-11} kg^{-1} m^3 s^{-2}$ is a constant of proportionality called the constant of universal gravitation. The gravitational force is always attractive.
+\end{form}
+
+\subsection{Weight}
+With this new formula, we can redefine weight, as the total gravitational force exerted on the body by all other bodies in the universe. Fortunately, when the object in consideration is near the Earth, we can neglected the gravitational pull from other celestial bodies, other than Earth.
+
+\begin{form}[Weight of object at Earth's surface]
+$$w = mg = F_g = G\frac{M_Em}{{R_E}^2}$$
+\end{form}
+Then,
+
+\begin{form}[Acceleration of a body at Earth's surface]
+$$g = G\frac{M_E}{{R_E}^2}$$
+\end{form}
+
+Where $R_E$ is the radius of the Earth, and $M_E$ is the mass of the earth. As stated earlier, $G$ is the gravitational constant.
+
+\subsection{Gravitation}
+We introduced the concept of gravitational potential energy and found that the potential energy associated with an object could be calculated from the equation $PE=mgh$, where h is the height of the object above or below some reference level. This equation, however, is valid only when the object is near Earth's surface. For objects high above Earth's surface, such as a satellite, an alternative must be used, because g varies with distance from the surface.
+
+To find this expression, we consider a body of mass $m$ outside the earth. and first compute the work $W_{grav}$ done by the gravitational force when the body moves directly away from or toward the center of the earth from $r=r_1$ and $r=r_2$.
+
+Then, $W_{grav}$ is given by
+
+$$W_{grav} = \int_{r_1}^{r_2} F_r dr$$
+
+Where $F_r$ is the radial component of the gravitational force $\vec{F}$, the component in the direction outward from the center of the earth.
+
+Because F points directly inward toward the center of the Earth, the force is negative.
+
+$$F_r = -G\frac{M_Em}{{r}^2}$$
+
+Then,
+
+\nospliteqn{W &= U_1 - U_2
+\\ &= -GM_Em\int_{r_1}^{r_2} \frac{1}{r^2}dr 
+\\ &= \frac{-GM_Em}{r_2}-\frac{-GM_Em}{r_1}
+\\ &= \frac{GM_Em}{r_1}-\frac{GM_Em}{r_2}
+}
+\begin{form}[General Form of Gravitational PE]
+The gravitational potential energy associated with an object of mass $m$ at a distance $r$ from the center of Earth is
+$$PE = -G\frac{M_E m}{r}$$
+where $M_E$ and $R_E$ are the mass and radius of the Earth respectively, with $r > R_E$
+\end{form}
+
+\subsection{Escape speeds}
+If an object is projected upward from Earth's surface with a large enough speed, it can soar off into space and never return. This speed is called Earth's escape speed. (It is also commonly called the escape velocity, but in fact is more properly a speed.) Earth's escape speed can be found by applying conservation of energy. Suppose an object of mass m is projected vertically upward from Earth's surface with an initial speed $v_i$. The initial mechanical energy (kinetic plus potential energy) of the object,  Earth system is given by
+$$KE_i + PE_i = \frac{1}{2}mv_i^2 - \frac{G M_E m}{R_E}$$
+
+We neglect air resistance and assume that the initial speed is just large enough to allow the object to reach infinity with a speed of zero. This value of $v_i$ is the escape speed $v_esc$. When the object is at an infinite distance from Earth, its kinetic energy is zero, because $v_f = 0$, and the gravitational potential energy is also zero,
+because 1/r goes to zero as r goes to infinity. Hence the total mechanical energy is zero, and the law of conservation of energy gives
+$$\frac{1}{2}mv_{esc}^2 - \frac{GM_em}{R_E} = 0$$
+
+Thus,
+\begin{form}[Finding the escape speed]
+The escape speed from earth is given by this equation:
+$$v_esc = \sqrt{\frac{2GM_2}{R_E}}$$
+\end{form}

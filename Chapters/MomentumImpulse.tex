@@ -1,0 +1,94 @@
+\section{Momentum and Impulse}
+ \subsection{Momentum}
+ In Physics, momentum has a precise definition. We define momentum as:
+ \begin{defi}[Momentum]
+ The linear momentum $\vec{\rho}$ of an object of mass $m$ with velocity $\vec{v}$ is the product of its mass and velocity:
+ $$\vec{\rho} = m\vec{v}$$
+ \end{defi}
+ This means that the momentum is directly proportional to both the mass and velocity of the object. Momentum is a vector quantity and has the same direction as its velocity.
+ 
+ \subsection{Impulse}
+ Changing the momentum of an object requires a force. This is, in fact, originally stated in Newton's first law of motion. Then, if a constant net force acts on it, then it is the rate of change of momentum over time, because.
+ 
+ From Newton's Second Law (refer to \ref{form:N2L})
+ 
+$$\vec{F} = m\vec{a} = m\frac{d v}{d t} = \frac{d m\vec{v}}{d t} = \frac{\text{Change in momentum}}{\text{Time interval}}$$
+
+This tells us that changing an object's momentum requires the continuous application of a force over
+a period of time t, leading to the definition of \textbf{impulse}:
+ 
+ \begin{defi}[Impulse]
+ If a constant force $\vec{F}_{const}$ the impulse $vec{I}$ delivered to the object over the elapsed time $d t$ is given by:
+ $$\vec{I} = \vec{F} d t$$
+ \end{defi}
+ 
+ \subsection{Conservation of Momentum} \label{sec::com}
+ When a collision occurs in an isolated system, the total momentum of the system doesn't change with the passage of time. Instead, it remains constant both in magnitude and direction. As such, we call this ``theory'' the \textbf{Conservation of Momentum}.
+ 
+ \begin{defi}[Conservation of Momentum]
+ When no net force acts on a system, the total momentum of the system remains constant in time. Thus, in a closed system,
+ $$m_1v_{1i} + m_2v_{2i} = m_1v_{1f} + m_2v_{2f}$$
+ \end{defi}
+ 
+ \subsection{Collisions}
+ We have seen that for any type of collision, the total momentum of the system just before the collision equals the total momentum just after the collision as long as the system may be considered isolated. The total kinetic energy, on the other hand, is generally not conserved in a collision because some of the kinetic energy is converted to internal energy, sound energy, and the work needed to permanently deform the objects involved, such as cars in a car crash. We define \textbf{an inelastic collision as a collision in which momentum is conserved, but kinetic energy is not}. The collision of a rubber ball with a hard surface is inelastic, because some of the kinetic energy is lost when the ball is deformed during contact with the surface. When two objects collide and stick together, the collision is called
+perfectly inelastic. For example, if two pieces of putty collide, \textbf{they stick together and move with some common velocity after the collision}. If a meteorite collides head on with the Earth, it becomes buried in the Earth and the collision is considered \emph{perfectly inelastic}. Only in very special circumstances is all the initial kinetic energy lost in a perfectly inelastic collision.
+
+\textbf{An elastic collision is defined as one in which both momentum and kinetic energy are conserved.} Billiard ball collisions and the collisions of air molecules with the walls of a container at ordinary temperatures are highly elastic. Macroscopic collisions such as those between billiard balls are only approximately elastic, because some loss of kinetic energy takes place. For example, in the clicking sound when two balls strike each other. Perfectly elastic collisions do occur, however, between atomic and subatomic particles. Elastic and perfectly inelastic collisions are limiting cases; most actual collisions fall into a range in between them.
+ 
+ In summary,
+ \begin{enumerate}
+\item In an elastic collision, both momentum and kinetic energy are conserved.
+\item In an inelastic collision, momentum is conserved but kinetic energy is not.
+\item In a perfectly inelastic collision, momentum is conserved, kinetic energy is not, and the two objects stick together after the collision, so their final velocities are the same.
+ \end{enumerate}
+ 
+ \subsection{Perfectly Inelastic Collisions}
+ Because the total momentum of the two-object isolated system before the collision equals the total momentum of the combined-object system after the collision, we can solve for the final velocity using conservation of momentum alone:
+$$m_1v_{1i}+m_2v_{2i}= (m_1+m_2)v_f$$
+\begin{form}[Calculating final velocity in perfectly inelastic collisions]
+For two objects each of mass $m_1$ and $m_2$ and their initial velocities $v_1$ and $v_2$:
+$$v_f = \frac{m_1v_{1i}+m_2v_{2i}}{m_1 + m_2}$$
+\end{form}
+It is not necessary to remember this formula, but if it is good for you, then do so as you wish. What you need to understand instead is the concept of conservation of momentum, and the definition of inelastic collisions to obtain the correct figures.
+
+\subsection{Elastic Collisions}
+Now consider two objects that undergo an elastic head-on collision. In this situation,\textbf{ both the momentum and the kinetic energy of the system of two objects are conserved}. We can write these conditions as:
+$$m_1v_{1i} + m_2v_{2i} = m_1v_{1f} + m_2v_{2f}$$  and
+$$ \frac{1}{2}m_1v_{1i}^2 + \frac{1}{2}m_2v_{2i}^2 = \frac{1}{2}m_1v_{1f}^2 + \frac{1}{2}m_2v_{2f}^2$$
+where $v$ is positive if an object moves to the right and negative if it moves to the left.
+
+\paragraph*{Problem Solving Strategy for one-dimensional collisions:}
+\begin{enumerate}
+\item \textbf{Coordinates}. Choose a coordinate axis that lies along the direction of motion.
+\item \textbf{Diagram}. Sketch the problem, representing the two objects as blocks and labeling velocity vectors and masses.
+\item Conservation of Momentum. Write a general expression for the total momentum of the system of two objects before and after the collision, and equate the two. On the next line, fill in the known values.
+]\item Conservation of Energy. If the collision is elastic, write a general expression for the total energy before and after the collision, and equate the two quantities. Fill in the known values. (Skip this step if the collision is not perfectly elastic.)
+\item Solve the equations simultaneously. 
+\end{enumerate}
+
+\subsection{Glancing collisions}
+In section \ref{sec::com}  we showed that the total linear momentum of a system is conserved when the system is isolated (that is, when no external forces act on the system). For a general collision of two objects in three-dimensional space, the conservation of momentum principle implies that the total momentum of the system in each direction is conserved. However, an important subset of collisions takes place in a plane. The game of billiards is a familiar example involving multiple collisions of objects moving on a two-dimensional surface. We restrict our attention to a single two-dimensional collision between two objects that takes place in a plane, and ignore any possible rotation. For such collisions, we obtain two component equations
+for the conservation of momentum:
+$$m_1v_{1ix}+m_2v_{2ix}= m_1v_{1f x}+ m_2v_{2f x}$$
+$$m_1v_{1iy}+m_2v_{2iy}= m_1v_{1f y}+ m_2v_{2f y}$$
+We must use three subscripts in this general equation, to represent, respectively, (1) the object in question, and (2) the initial and final values of the components of velocity. Now, consider a two-dimensional problem in which an object of mass m1 collides with an object of mass $m^2$ that is initially at rest. After the collision, object 1 moves at an angle $\theta$ with respect to the horizontal, and object 2 moves at an angle $\phi$ with respect to the horizontal. This is called a glancing collision. Applying the law of conservation of momentum in component form, and noting that the initial y-component of momentum is zero, we have x-component: $$m_1v_{1i}+ 0=m_1v_{1f}cos \theta+m_2v_{2f}cos \phi$$
+y component: $$0+ 0=m_1v_{1f}sin \theta+m_2v_{2f}sin \phi$$
+
+If the collision is elastic, we can write a third equation, for conservation of energy,
+in the form
+$$\frac{1}{2}m_1v_{1i}^2 = \frac{1}{2}m_1v_{1f}^2 + \frac{1}{2}m_1v_{2f}^2$$
+If we know the initial velocity v1i and the masses, we are left with four unknowns
+($v_{1f}$ , $v_{2f}$ , $\theta$, and $\phi$). Because we have only three equations, one of the four remaining
+quantities must be given in order to determine the motion after the collision from conservation principles alone.
+If the collision is inelastic, the kinetic energy of the system is not conserved. Then, the above equation does not apply.
+
+\paragraph*{Problem Solving Strategy -- 2D collisions}
+\begin{enumerate}
+\item \textbf{Coordinate Axes}. Use both x- and y-coordinates. It's convenient to have either the x-axis or the y -axis coincide with the direction of one of the initial velocities.
+\item \textbf{Diagram}. Sketch the problem, labeling velocity vectors and masses.
+\item \textbf{Conservation of Momentum}. Write a separate conservation of momentum equation for each of the x- and y-directions. In each case, the total initial momentum in a given direction equals the total final momentum in that direction.
+\item \textbf{Conservation of Energy}. If the collision is elastic, write a general expression for the total energy before and after the collision, and equate the two expressions. Fill in the known values. (Skip this step if the collision is not perfectly elastic.) The energy equation can't be simplified as in the one-dimensional case, so a quadratic expression must be used when the collision is elastic.
+\item {Solve the equations simultaneously.} There are two equations for inelastic collisions
+and three for elastic collisions.
+\end{enumerate}

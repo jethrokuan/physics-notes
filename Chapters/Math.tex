@@ -1,0 +1,344 @@
+\section{Preliminary Math}
+In Physics, Mathematics is indispensable. In order to study physics well, one must familiarise himself with the mathematical concepts which generations of brilliant people have created and concisely compiled into the various textbooks you see sold in bookstores today. Without mathematics, physics would be ambiguous; no precise statement could be made to predict the outcome of the various phenomena. For example, if I were to throw a stone up in the air with an initial speed, without the knowledge of the acceleration due to gravity, and the equation $v^2=u^2 + 2as$, all I could say was ``The stone will move upwards and come to a halt". But with the equation, we are able to ``exactly" predict the position at which the stone will come to a halt.
+
+For scientific purposes, I shall adopt similar, widely-used notation so this will not confuse the reader himself. In any case, I will present this by showing some physical phenomena, and attempt at converging the ideas of mathematics and physics together to the best of my ability.
+
+I presume that boring algebra, of which I believe the hardest part in relation to physics is the Vieta's relationship between roots, can be skipped. As a result, it should be okay to move on to the slightly counter--intuitive, but important mathematical tool of calculus. Also note that nothing will be cited because all pictures are drawn using the inbuilt picture environment for \LaTeX.
+
+\subsection{Fundamental Calculus}
+Single Variable Calculus is often taught to freshman in university, because they feel that it is an essential course in learning many fields of physics, such as quantum mechanics and electromagnetism. And indeed it is. (I suggest taking a look at the courses 18.01 and 18.02 from the MIT Opencourseware. Personally, I felt that they were pretty helpful in building strong foundation)
+
+Of course, it is first important to understand the meaning, both geometrical and physical, of a derivative. A derivative at a point is basically the equation of the line drawn tangent to that point. We first choose two points on a function, $f(x)$. We want to obtain the gradient of the line passing through the two points. This can be easily done using graph paper.
+
+We then start choosing two points closer and closer to each other, the horizontal (a-axis) distance between the two points is a infinitely small. We denote this infinitely small quantity by $\Delta x$. As such, we can obtain the gradient of the line by evaluating.
+\eqn{\frac{f(x+\Delta x) - f(x)}{\Delta x}}
+and of course this is when $\Delta x$ nears 0 so a more appropriate mathematical themula would be
+\eqn{\lim_{\Delta x \rightarrow 0} \frac{f(x+\Delta x) - f(x)}{\Delta x}}
+
+This is the   definition of a derivative. Since the two points we chose are so close to each other, it is as if the calculated equation would be the tangent of the original equation. And thus,
+\eqn{f'(x)=\lim_{\Delta x \rightarrow 0} \frac{f(x+\Delta x) - f(x)}{\Delta x}}
+
+From here onwards, It is easy to derive themulas for different special identities. For example, I want to find the derivative of the equation $f(x)=ax^n$ where $a$ and $n$ are constants.
+
+\nospliteqn{ f'(x) & =\lim_{\Delta x \rightarrow 0} \frac{f(x+\Delta x) - f(x)}{\Delta x} \\
+& = \lim_{\Delta x \rightarrow 0} \frac{a(x+\Delta x)^n-ax^n}{\Delta x}\\
+& = \lim_{\Delta x \rightarrow 0} \frac{a\brac{x^n + \C{n}{1}x^{n-1}\brac{\Delta x}+...}-ax^n}{\Delta x}\\
+}
+
+When $\Delta x$ approaches 0, the terms behind $\C{n}{1}x^{n-1}\brac{\Delta x}$ will approach zero too. Then this would be equal to 
+
+\nospliteqn{lim_{\Delta x \rightarrow 0} \frac{a\brac{x^n + \C{n}{1}x^{n-1}\brac{\Delta x}+...}-ax^n}{\Delta x} & = \lim_{\Delta x \rightarrow 0} \frac{\brac{anx^{n-1}}\brac{\Delta x}}{\Delta x}\\
+& = anx^{n-1}
+}
+
+This is the final result. Of course it is good practice to derive the rest, but I feel that one can do it on his own. The other results are shown as below:
+
+\spliteqn{ \frac{d}{dx}\brac{\sin x} & = \cos x \\
+\frac{d}{dx}\brac{\cos x} & = - \sin x\\
+\frac{d}{dx}\brac{e^x} & = e^x \\
+\frac{d}{dx}\ln f(x) & = \frac{f'(x)}{f(x)} 
+}
+Note that other logariforms of different bases can be converted to that of base e, and use the above rule to find its derivative.
+
+There are also certain general rules that can be derived using the   definition. These are written in the more commonly adopted notation in physics, which are used only for simplicity.
+
+Let $u$ and $v$ both be differentiable functions.
+
+The product rule is as such:
+\eqn{\brac{uv}'= u'v + uv'}
+
+The quotient rule is as such:
+\eqn{\brac{\frac{u}{v}}'=\frac{u'v-uv'}{v^2}}
+
+The more often used rule, for complicated functions (within functions) is known as the \textbf{chain rule}. It is as such, in general
+\eqn{\frac{dy}{dx}=\frac{dy}{dz}\times \frac{dz}{dx}}
+
+This covers the basis of single variable calculus. Using these rules, any complicated function most can be differentiated.
+
+Calculus has various applications. Calculus is used to approximate values and relate rates. It can also be used in plotting graphs, finding their minima and maxima. The purpose of that previous section is to provide a foundation for calculus, and I will not be going through the applications, except a few.
+
+The Newton-Rhapson Method is important. The idea of the Newton-Rhapson method is as such: we first start out with a reasonable guess; a nice number reasonably close to the true root, and approximate it with a tangent line. We can calculate the x-intercept easily, and this would often be a better approximation than the previous. This cycle is reiterated.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%UNFINISHED%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Another often easier type of differentiation is the implicit one. This is nothing more than the special application of the chain rule.
+
+For example to differentiate the function $x^2 + y^2 = 25$ to find the slope of the circle when $x=3$, one could do so explicitly by shifting the x terms over to the other side, however here i present a simpler method.
+
+\noeqn{x^2 + y^2 = 25}
+Differentiating both sides
+\nospliteqn{2x + 2y y' &= 0\\
+y' &= -\frac{x}{y}
+}
+
+Substituting the value of x and solving for y, we can easily obtain the slope of the circle at $x=3$.
+
+An important part of single variable calculus is the Taylor series. The taylor series is the representation of a function as a sum of infinite terms, each additional one correcting and "work" toward theming a polynomial close to the original function. It is very useful for approximation purposes. People often take the first few terms. The themula is as such:
+\eqn{\sum_{n=0} ^ {\infty } \frac {f^{(n)}(a)}{n!} (x-a)^{n}}
+
+An example of the application of the taylor series is the approximation of the value $e^x$ where we pick $a=0$
+
+\noeqn{1 + \frac{x^1}{1!} + \frac{x^2}{2!} + \frac{x^3}{3!} + \frac{x^4}{4!} + \frac{x^5}{5!}+ \cdots = 1 + x + \frac{x^2}{2} + \frac{x^3}{6} + \frac{x^4}{24} + \frac{x^5}{120} + \cdots}
+
+That is about it for single variable calculus, because I do not want to dive into the details. (A single book could be written on single-variable calculus)
+
+\subsection{Vectors}
+Let us move on to some vectors. This is a vector $\vec{A}$:
+\begin{center}
+\begin{picture}(10,10)
+\put(0,0){\vector(1,1){10}}
+\put(0.5,3.5){$\vec{A}$}
+\end{picture}
+\end{center}
+
+A vector has both magnitude, and direction. A vector can be described by its coordinates.
+\begin{center}
+\begin{picture}(50,50)
+\put(0,0){\vector(0,2){50}}
+\put(0,0){\vector(2,0){50}}
+\put(30,0){\line(0,2){30}}
+\put(30,-3){$x$}
+\put(0,30){\line(2,0){30}}
+\put(-3,30){$y$}
+\put(10,14){$\vec{A}$}
+\put(0,0){\vector(1,1){30}}
+\put(50,-4){x-axis}
+\put(-14,50){y-axis}
+\end{picture}
+\end{center}
+
+In the above diagram, $\vec{A}=\langle x,y \rangle$
+
+There are some basic rules that are required for computing vector additions, subtractions and products.
+
+Vector addition is simple: $\vec{A} + \vec{B} = \vec{B} + \vec{A} = \vec{C}$
+
+\begin{center}
+\begin{picture}(30,30)
+\put(0,0){\vector(0,1){30}}
+\put(-5,15){$\vec{C}$}
+\put(0,0){\vector(1,0){40}}
+\put(15,-5){$\vec{A}$}
+\put(40,0){\vector(-4,3){40}}
+\put(20,17){$\vec{B}$}
+\end{picture}
+\end{center}
+
+
+In a similar way, vector subtraction is just the connection between the start point and the end point.
+\begin{center}
+\begin{picture}(30,30)
+\put(0,0){\vector(0,1){30}}
+\put(-5,15){$\vec{C}$}
+\put(0,0){\vector(1,0){40}}
+\put(15,-5){$\vec{A}$}
+\put(0,30){\vector(4,-3){40}}
+\put(20,17){$-\vec{B}$}
+\end{picture}
+\end{center}
+
+In this similar looking diagram, we see $\vec{A} = \left(-\vec{B}\right) + \vec{C}$
+
+Things get a little tricky when it comes to multiplication. There are two kinds of multiplication for vectors, but they are completely different.
+
+The scalar product, also known as the dot product, produces a scalar quantity. It geometrically represents the the product of the projection of one arrow on another arrow, and the other arrow. It is denoted by a dot, like this: $\cdot$
+
+We then arrive at a formula for calculating a dot product:
+\begin{defi}[Dot Product]\label{dotprod}
+\eqn{\vec{A}\cdot \vec{B} = \left|A\right|\left|B\right|\cos \theta}
+\end{defi}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\subsection{Dirac's Bra-ket Notation}
+No doubt you are now familiar with the world of arrows by now. But in quantum physics the notation often adopted is the bra-ket notation. It is also used in operators such as hamiltonian operators. It is then often important to make the link between the world of arrows, and this bra-ket notation, in linear vector spaces. We start to use this notation, first adopted by Dirac, a physicist, as the first step in weaning the reader away from thinking that vectors are always arrows, which we discussed in the earlier section. We will have to first give a proper definition of a linear vector space:
+
+\begin{defi}[Linear Vector Space]
+A linear vector space denoted by V, is a collection of vectors $\mid A \rangle$, $\mid B \rangle$ and so on called vectors, for which there exists:
+\begin{enumerate}
+\item A definite rule for theming the vector sum, denoted by $\mid A \rangle + \mid B \rangle$
+\item A definite rule for multiplication by scalars x,y denoted by $x \mid A \rangle$ with the following features:
+\begin{itemize}
+\item The result of these operations is another element of the space, a feature called \textit{closure}: $\mid A \rangle + \mid B \rangle \in V$
+\item Scalar multiplication is distributive in the vectors: $a\brac{\ket{A}+\ket{B}} = a\ket{A} + a\ket{B}$
+\item Scalar multiplication is also distributive in the scalars: $\brac{a+b}\ket{A} = a\ket{A} + b\ket{A}$
+\item Addition is commutative: $\ket{A} + \ket{B} = \ket{B} + \ket{A}$
+\item Addition is associative: $\ket{A} + \brac{\ket{B} + \ket{C}} = \brac{\ket{A} + \ket{B}} + \ket{C}$
+\item There exists a null vector $\ket{0}$ such obeying $\ket{0} + \ket{A} = \ket{A}$
+\item For every vector $\ket{A}$ there exists an inverse under addition, $\ket{-A}$, such that $\ket{A} + \ket{-A} = \ket{0}$
+\end{itemize}
+\end{enumerate} 
+\end{defi}
+
+Notice, that those axioms come naturally? So there isn't actually a need to remember it. Only remember those that seem to be weird/abnormal.
+
+\begin{defi}[Field]
+The numbers a,b, ... are called the field over which the vector space is defined
+\end{defi}
+
+If the field consists of real numbers only, it is called the \textit{real vector space}. If they are complex we call it the \textit{complex vector space}.
+
+It is then important to note that a vector itself is neither real nor complex; the adjective only applies to scalars. Also, note that no reference has been made to either magnitude or reference. The point is that while the arrows have these qualities, members of the vector space do not. 
+
+The concept of linear dependence is important.
+\begin{defi}
+We first consider the linear relation of the them:
+\eqn{\sum_{i=1}^{n}a_i\ket{i} = \ket{0}}
+
+Without loss of generality, we can assume none of the elements on the LHS contain a $\ket{0}$.
+
+Then a set of vectors is said to be \textit{linearly independent} if the only linear relation is the trivial one with all $a_i = 0$ 
+\end{defi}
+
+This means that as long as the arrows are not parallel to each other, they are linearly independent.
+
+\begin{defi}[Dimensions]
+A vector space has dimensions $n$ if it can contain at most $n$ linearly independent vectors. It will be denoted by $V^n\brac{R}$ if the field is real, and denoted by $V^n\brac{C}$ if the field is complex.
+\end{defi}
+
+Any vector $\ket{V}$ in an n-dimensional space can be written as a linear combination of the vectors, $\ket{1}, \ket{2}, ... , \ket{n}$
+
+\begin{defi}[Basis]
+A set of $n$ linearly independent vectors in a n-dimensional space is called a \emph{basis}
+\end{defi}
+
+Therefore, we can write as such:
+\eqn{\ket{V} = \sum_{i=1}^n v_i\ket{i}}
+
+where the kets $\ket{i}$ them a basis.
+
+Using this \textit{unique} expansion we can define the addition of kets.
+
+\begin{form}[Additions of Kets]
+If \noeqn{\ket{V} = \sum_{i}v_i\ket{i}} and \noeqn{\ket{W} = \sum_{i} w_i\ket{i}}
+then
+\eqn{\ket{V} + \ket{W} = \sum_{i}\brac{v_i+w_i}\ket{i}}
+\end{form}
+
+This is equivalent to adding its components.
+
+In a similar way, to multiply a vector by a scalar, it suffices to multiply its components by the scalar, i.e.:
+
+\begin{form}[Multiplication of Kets by a Scalar]
+$$a\ket{V} = a \sum_i v_i\ket{i} = \sum_i av_i\ket{i}$$
+\end{form}
+
+\subsubsection{Ket Products}
+The matrix and function examples of kets should have already convinced you that there we can have a vector space with \emph{no} preassigned length or direction for the elements, and as such not look like an arrow.
+
+If you could recall the dot product of a vector (Definition \ref{dotprod})
+
+\eqn{\vec{A}\cdot \vec{B} = \left|A\right|\left|B\right|\cos \theta}
+
+The length of the vector $\v{A}$ using the definitions. We see that this formula for the dot product requires an angle? But in our case, kets might not have ``angles" between them. As such, we must adopt the other formula in definition .
+
+\eqn{\vec{A}\cdot\vec{B} = A_xB_x + A_yB_y + A_zB_z}
+
+Our goal is to arrive at a similar formula to calculate the product of kets.
+
+We recall again the key features of scalar products between arrowlike vectors.
+\begin{enumerate}
+\item $\vec{A} \cdot \vec{B} = \vec{B} \cdot \vec{A}$
+\item $\vec{A} \cdot \vec{A} \geq 0 \text{ and equal } 0 \text{ iff } \vec{A} = 0$
+\item $\vec{A} \cdot\brac{b\vec{B} + c\vec{C}} = b\vec{A}\cdot\vec{B} + c\vec{A}\cdot\vec{C}$
+\end{enumerate}
+
+From this, we want to come up with a generalisation which we will call the \emph{inner product} or \emph{scalar product} between two kets $\ket{V}$ and $\ket{W}$. We denote this by the symbol $\braket{V}{W}$.
+
+\begin{defi}[Inner product]
+The inner product of two kets $\ket{V}$ and $\ket{W}$ is denoted by the braket $\braket{V}{W}$
+\end{defi}
+
+We demand the inner product to follow these axioms:
+\begin{form}[Axioms of Inner Products]
+The following axioms must hold for inner products:
+\begin{enumerate}
+\item $\braket{V}{W} = \braket{W}{V}^*$
+\item $\braket{V}{V}\geq 0 \text{ and is equal to } 0 \text{ iff } \ket{V} 
+= 0$
+\item $\braket{V}{a\ket{W} + b\ket{Z}}  = a\braket{V}{W} + b\braket{V}{Z}$
+\end{enumerate}
+\end{form}
+
+Then similar to arrow vectors, we can say that:
+\begin{defi}[Orthogonal Kets]
+Two kets are orthogonal if they are perpendicular, or their inner product vanishes
+\end{defi}
+\begin{defi}[Length of a Ket]
+We shall refer to the length of a ket $|V|$ with the formula $\sqrt{\braket{V}{V}}$
+\end{defi}
+\begin{defi}[Orthonormal Basis]
+A set of basis vectors all of unit norm, which are pairwise orthogonal, are referred to as orthonormal basis
+\end{defi}
+
+\begin{form}[Formula for Inner Product]
+Where
+\noeqn{\ket{V} = \sum_i v_i\ket{i}}
+and
+\noeqn{\ket{W} = \sum_j w_j\ket{j}}
+\eqn{\braket{V}{W} = \sum_i \sum_j v_i^*w_j\braket{i}{j}\label{doublesum}}
+\end{form}
+
+However, to any further from here, we have to know how to calculate $\braket{i}{j}$ and all we know is that they are linearly independent. However, when we use an orthonormal basis, only some terms survive and we end up with the simple expression, like $\vec{A}\cdot\vec{B} = A_xB_x + A_yB_y + A_zB_z$ 
+
+For a more general case, I shall, at this point, go through the Gram-Schmidt Theorem, as shown in Theorem \ref{G-S}.
+
+\begin{form}[Gram-Schmidt]\label{G-S}
+Given a linearly independent basis we can form linear combinations of the basis vectors to obtain an orthonormal basis
+\end{form}
+
+The reader should attempt to verify the theorem himself.
+
+Assuming the theorem holds, we can assume that the current basis is orthogonal:
+\eqn{\braket{i}{j} = \left\{ 
+  \begin{array}{l l}
+    0 & \quad \text{for $i\neq j$}\\
+    1 & \quad \text{for $i = j$}\\
+  \end{array} \right. = \delta_{ij}}
+ 
+where $\delta$ is the Kronecker delta symbol.
+ 
+Substituting this back into Equation \ref{doublesum}, we get:
+\eqn{\braket{V}{W} = \sum_i v_i^*w_i}
+
+It is this form of the inner product that will be used from now on.
+
+Because the vector is uniquely specified by its components in a given basis, we may, in this basis, write it as a column vector:
+\eqn{\ket{V} = \left[ \begin{array}{c}
+v_1 \\
+v_2 \\
+v_3 \\
+. \\
+. \\
+. \\
+v_n
+\end{array} \right] \text{in this basis}}
+
+Likewise, we can write $\ket{W}$ as:
+
+\eqn{\ket{W} = \left[ \begin{array}{c}
+w_1 \\
+w_2 \\
+w_3 \\
+. \\
+. \\
+. \\
+w_n
+\end{array} \right] \text{in this basis}}
+
+The inner product $\braket{V}{W}$ can be written as a product of a row and column vector: The transpose conjugate of the column vector representing $\ket{V}$ with the column vector representing $\ket{W}$:
+
+\eqn{\braket{V}{W} = 
+\left[ {v_1}^*, {v_2}^*, \dots ,{v_n}^*\right]
+\left[ \begin{array}{c}
+w_1 \\
+w_2 \\
+w_3 \\
+. \\
+. \\
+. \\
+w_n
+\end{array} \right]}
+
+\newpage

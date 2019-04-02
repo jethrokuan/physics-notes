@@ -1,0 +1,156 @@
+\section{Rotational Equilibrium and Rotational Dynamics}
+
+In the study of linear motion, objects were treated as point particles without structure. It didn't matter where a force was applied, only whether it was applied or not.
+
+The reality is that the point of application of a force does matter. In football, for example, if the ball carrier is tackled near his midriff, he might carry the tackler several yards before falling. If tackled well below the waistline, however, his center of mass rotates toward the ground, and he can be brought down immediately. Tennis provides another good example. If a tennis ball is struck with a strong horizontal force acting through its center of mass, it may travel a long distance before hitting the ground, far out of bounds. Instead, the same force applied in an upward, glancing stroke will impart topspin to the ball, which can cause it to land in the opponent's court.
+
+\subsection{Torque}
+Forces cause accelerations; \textit{torques} cause angular accelerations. There is a definite relationship, however, between the two concepts.
+
+First, we state the definition of torque:
+
+\begin{defi}[Torque]
+Let $\vec{F}$ be a force acting on an object, and let $\vec{\tau}$ be a position vector from a chosen point $O$ to the point of application of the force, with perpendicular to $\vec{r}$. The magnitude of the torque $\vec{\tau}$ exerted by the force $\vec{F}$ is given by
+$$\tau = rF$$
+where $r$ is the length of the position vector and $F$ is the magnitude of the force.
+SI unit: Newton-meter($N m$)
+\end{defi}
+
+A more accurate method of calculating torque, is using the cross product. As such note that torque is also a vector.
+
+\begin{form}[Torque: Vector form]
+$$\vec{\tau} = \vec{r} \times \vec{F}$$
+\end{form}
+
+By convention, \textbf{counterclockwise is taken to be the positive direction}, \textbf{clockwise the negative direction}. When an applied force causes an object to rotate counterclockwise, the torque on the object is positive. When the force causes the object to rotate clockwise, the torque on the object is negative. When two or more torques act on an object at rest, the torques are added. If the net torque isn't zero, the object starts rotating at an ever-increasing rate. If the net torque is zero, the object's rate of rotation doesn't change. These considerations lead to the rotational analog of the first law: \textbf{the rate of rotation of an object doesn't change, unless the object is acted on by a net torque.}
+
+The applied force isn't always perpendicular to the position vector . Thus, we need a more general form of the definition of torque, which applies for all angles:
+ 
+\begin{defi}[General definition of torque]
+Let $\vec{F}$ be a force acting on an object, and let $\vec{r}$ be a position vector from a chosen point $O$ to the point of application of the force. The magnitude of the torque $\vec{\tau}$ exerted by the force is
+$$\tau = rF\sin \theta$$
+where $r$ is the length of the position vector, $F$ the magnitude of the force, and $\theta$ the angle between $\vec{r}$ and $\vec{F}$.
+SI unit: Newton-meter ($N m$)
+\end{defi}
+
+Torque is a vector perpendicular to the plane determined by the position and force vectors, as illustrated in Figure 8.4. The direction can be determined by the \textit{right-hand rule}:
+\begin{enumerate}
+\item Point the fingers of your right hand in the direction of $\vec{r}$.
+\item Curl your fingers toward the direction of vector $\vec{F}$.
+\item Your thumb then points approximately in the direction of the torque.
+\end{enumerate}
+
+
+\subsection{Torque and the two conditions for equilibrium}
+\begin{form}[The two conditions for equilibrium]
+An object in mechanical equilibrium must satisfy the following two conditions:
+\begin{enumerate}
+\item The net external force must be zero: $\sum{\vec{F}} = 0$ (translational)
+\item The net external torque must be zero: $\sum{\vec{\tau}} = 0$ (rotational)
+\end{enumerate}
+\end{form}
+
+\subsection{Center of Gravity}
+To compute the torque on a rigid body due to the force of gravity, the body's entire weight can be thought of as
+concentrated at a single point. The problem then reduces to finding the location of that point. If the body is homogeneous (its mass is distributed evenly) and symmetric, it's usually possible to guess the location of that point.
+
+Consider an object of arbitrary shape lying in the xy-plane. The object is divided into a large number of very small particles of weight $m_1g$, $m_2g$, $m_3g$, ... having coordinates $(x_1, y_1), (x_2, y_2), (x_3, y_3)$, ... . If the object is free to rotate around the origin, each particle contributes a torque about the origin that is equal to its weight multiplied by its lever arm. For example, the torque due to the weight $m_1g$ is $m_1gx_1$, and so forth.
+
+We wish to locate the point of application of the single force of magnitude $w=F_g=Mg$ (the total weight of the object), where the effect on the rotation of the object is the same as that of the individual particles. This point is called the object's center of gravity. Equating the torque exerted by $w$ at the center of gravity to the sum of the torques acting on the individual particles gives
+$$(m_1g + m_2g + m_3g + ...)=m_1gx_1 + m_2gx_2 + m_3gx_3+ ...$$
+Thus,
+$$x_{cg} = \frac{m_1x_1 + m_2x_2 + m_3x_3 + ...}{m_1 + m_2 + m_3 + ...} = \frac{\sum{m_ix_i}}{\sum m_i}$$
+
+where $x_{cg}$ is the x-coordinate of the center of gravity. Similarly, the y-coordinate and z-coordinate of the center of gravity of the system can be found from
+$$y_{cg}= \frac{\sum{m_iy_i}}{\sum{m_i}}$$
+and
+$$z_{cg} = \frac{\sum{m_iz_i}}{\sum{m_i}}$$
+
+\subsection{Relationship between torque and angular acceleration}
+When a rigid object is subject to a net torque, it undergoes an angular acceleration that is directly proportional to the net torque. This result, which is analogous to Newton's second law, is derived as follows.
+$$F_t = ma_t$$
+Multiply both sides of the equation by $r$:
+$$F_tr = mra_t$$
+Substituting the equation relating tangential and angular acceleration, the above expression gives
+$$F_tr = mr^2a$$
+Because torque $\tau = F_tr$, we get
+$$\tau = mr^2a$$
+
+\subsection{Rotational Kinetic Energy}
+We previously defined the kinetic energy of a particle moving through space with a speed $v$ as the quantity $\frac{1}{2}mv^2$. 
+
+Let there be a point of mass $m_i$ in a rigid body object. The mass of the rigid body would be the sum of all such point masses. 
+
+In addition to that, we know $$K_i = \frac{1}{2}m_iv_i^2$$
+
+Because we are concerned with the rotational energy, we substitute $v=\omega r$, and obtain 
+$$K_i = \frac{1}{2}m_ir_i^2\omega_i^2$$
+
+The total rotational energy would be
+$$K_R = \sum_i K_i = \sum_i \frac{1}{2} m_i r_i^2 \omega_i^2$$
+
+$\omega$ is constant in a rigid body object, so:
+$$K_R = \frac{1}{2} \left(\sum_i m_i r_i^2\right) \omega ^2$$
+
+We call the quantity, $\left(\sum_i m_i r_i^2\right)$ the \textbf{moment of inertia} of the rigid object.
+
+Therefore, somewhat analogously, an object rotating about some axis with an angular speed $\omega$ has rotational energy given by $\frac{1}{2}I\omega^2$
+
+\begin{form}[Rotational Kinetic Energy]
+Given the inertia I, and angular speed $\omega$, then the rotational kinetic energy is given by:
+$$KE_r=\frac{1}{2}I\omega^2$$
+\end{form}
+\subsection{Calculating Moments of Inertia}
+The moment of inertia of a system can be obtained by dividing the rigid body into small elements of mass $\Delta m_i$.
+
+We can then take the limit where by $\Delta m_i$ approaches zero, then the sum becomes an integral over the volume of the object.
+$$I = \lim_{\Delta m_i \rightarrow 0} \sum_i r_i^2 \Delta m_i = \int r^2 dm $$
+
+But note $\rho = \frac{\text{mass}}{\text{volume}}$ so $dm = \rho \text{ } dV$
+
+The equation can then be rewritten as: 
+
+$$I = \int \rho r^2 dV$$
+
+\subsection{Energy Considerations in Rotational Motion}
+Consider a rigid body pivoted at point O. and there is a point P a distance $r$ away from the point O. Suppose a single force $\vec{F}$ is applied at P, And the work done on the object by $\vec{F}$ to rotate through an infinitesimal distance $ds = r \text{ } d\theta$  is then:
+
+$$dW = \vec{F} \cdot \vec{ds} = \left(F \sin \phi\right)r \text{ } d\theta$$
+
+Where $\phi$ is the angle of applied force. We can rewrite work done for the infinitesimal rotation as 
+$$dW = \tau d\theta$$
+Consequently,
+
+$$P = \frac{dW}{dt} = \tau \omega$$
+
+Many other formulas can be derived, but will just be listed, in comparison to the linear equations, for a juxtapose.
+
+\begin{tabular}{p{0.5\textwidth} p{0.5 \textwidth}} \toprule 
+Linear Motion with a Constant (Variables: x and v) & Rotational Motion about a Fixed Axis with $\alpha$ Constant (Variables: $\theta$ and $\omega$)\\ \midrule
+$v=dx/dt$ & $\omega=d\theta/dt$\\
+$a = dv/dt$ & $\alpha = d\omega/dt$ \\
+ $\sum F = ma$ & $\sum \tau_{ext}=I \alpha$\\
+$KE = \frac{1}{2}mv^2$ & $K_R =\frac{1}{2} I \omega ^2$\\
+$P = Fv$ & $P = \tau \omega $\\
+$W = \int_{\theta_i}^{\theta f} \tau d\theta$ & $\int_{x_i}^{x_f} F_x dx$ \\
+$p=mv$ & $L = I \omega $\\
+$\sum \tau= dL/dt $ & $\sum F = dp/dt$ \\\bottomrule
+\end{tabular}
+
+\subsection{Angular Momentum}
+Let there be an object of mass $m$ rotates in a circular path of radius $r$, acted on by a net force, $F_{net}$. The resulting net torque on the object increases its angular speed from the value $\omega_\circ$ to the value $\omega$ in a time interval $d t$. Therefore, we can write:
+$$\sum{\tau} = I\alpha = I \frac{d \omega}{d t} = I\left(\frac{\omega - \omega_\circ}{d t}\right) = \frac{I\omega - I\omega_\circ}{d t}$$
+
+If we define the product
+$$L=I\omega$$
+as the \textbf{angular momentum} of the object, then we can write:
+$$\sum{\tau}=\frac{\text{angular momentum}}{\text{time interval}} = \frac{d L}{d t}$$
+
+Note that \textbf{the net torque acting on an object is equal to the rate of change of the object's angular momentum}.
+
+\begin{form}[Conservation of Angular Momentum]
+Let $L_s$ and $L_f$ be the angular momenta of a system at two different times, and suppose there is no net external torque, so $\sum{\tau} = 0$, then:
+$$L_s = L_f$$
+Angular momentum \emph{is said to be conserved}.
+\end{form}
+

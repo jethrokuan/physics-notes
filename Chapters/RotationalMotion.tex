@@ -1,0 +1,69 @@
+\section{Rotational Motion}
+Rotational motion is an important part of everyday life. The rotation of the Earth creates the cycle of day and night, the rotation of wheels enables easy vehicular motion, and modern technology depends on circular motion in a variety of contexts, from the tiny gears in a Swiss watch to the operation of lathes and other machinery. The concepts of angular speed, angular acceleration, and centripetal acceleration are central to understanding the motions of a diverse
+range of phenomena, from a car moving around a circular race track to clusters of galaxies orbiting a common center.
+ 
+Rotational motion, when combined with Newton's law of universal gravitation and his laws of motion, can also explain certain facts about space travel and satellite motion, such as where to place a satellite so it will remain fixed in position over the same spot on the Earth. The generalization of gravitational potential energy and energy conservation offers an easy route to such results as planetary escape speed. Finally, we present Kepler's three laws of planetary motion, which formed the foundation of Newton's approach to gravity.
+
+This chapter has striking similarities with that of linear motion(Kinematics). So don't be surprised to see similar equations or formulas, or even definitions.
+
+\subsection{Angular Speed and Angular Acceleration}
+This is a totally new aspect, different from that of linear motion, and deals with motion in a circle. Each of the new concepts have their own analog in rotational motion: \emph{angular acceleration $\alpha$, angular velocity $\omega$,  and angular displacement $d \theta$}.
+
+The \textbf{radian}, a unit of angular measure, is essential to the understanding of these concepts. Recall that the distance s around a circle is given by $s=2\pi r$, where r is the radius of the circle. The radian, can be defined as the arc length s along a circle divided by the radius r:
+\begin{defi}[Definition of a Radian]
+$$\theta = \frac{s}{r}$$
+Where s is the circumference of the circle, and r the radius.
+\end{defi}
+One radian is approx. equal to $53^\circ$.
+
+Armed with the concept of the radian, we can now discuss angular concepts in physics. The next concept we are going to present is the one on \textbf{angular displacement}.
+\begin{defi}[Definition of Angular Displacement]
+An object's angular displacement, $d \theta$ is the difference in its final and initial angles.
+$$d \theta = \theta_f - \theta_i$$
+SI unit: Radian (1 rad).
+\end{defi}
+Note that we use angular variables to describe the rotating disc because each point on the disc undergoes the same angular displacement in any given time interval. Having defined angular displacement, it's natural to define an \textbf{angular velocity}:
+\begin{defi}[Definition of Angular Velocity]
+The average angular velocity $\omega_{av}$ of a rotating rigid object during the time interval $d t$ is defined as the angular displacement $d \theta$ divided by $d t$:
+$$\omega_{av} = \frac{\theta_f-\theta_i}{t_f-t_i} = \frac{d \theta}{d t}$$
+SI unit = rad $s^{-1}$
+\end{defi}
+
+Just as changing speed leads to the concept of an acceleration, a change in angular velocity leads to the concept of an \textbf{angular acceleration}.
+
+\begin{defi}[Angular Acceleration]
+An object's average angular acceleration $\alpha_{av}$ during the time interval $d t$ is defined
+as the change in its angular velocity $d \omega$ divided by $d t$ :
+$$\alpha_{av} = \frac{\omega_f - \omega_i}{t_f-t_i} = \frac{d \omega}{d t}$$
+SI unit: radian per second squared ($rad/s^2$)
+\end{defi}
+
+\textbf{When a rigid object rotates about a fixed axis, as does the bicycle wheel, every portion of the object has the same angular speed and the same angular acceleration.} This fact is what makes these variables so useful for describing rotational motion.
+
+\subsection{Rotational Motion Under Constant Angular Acceleration}
+A number of parallels exist between the equations for rotational motion and those for linear motion. These are the similarities among the equations:
+
+\begin{tabular}{p{0.5\textwidth} p{0.5 \textwidth}} \toprule 
+Linear Motion with a Constant (Variables: x and v) & Rotational Motion about a Fixed Axis with $\alpha$ Constant (Variables: $\theta$ and $\omega$)\\ \midrule
+$v=v_i + at$ & $\omega = \omega_i + \alpha t$\\
+$s = v_it + \frac{1}{2}at^2$ & $d \theta = \omega_it + \frac{1}{2}\alpha t^2$ \\
+$v^2 = v_i^2 + 2ad s$ & $\omega^2 = \omega_i^2 = 2 \alpha d \theta$ \\ \bottomrule
+\end{tabular}
+
+Notice that every term in a given linear equation has a corresponding term in the
+analogous rotational equation.
+
+\subsection{Relations Between Angular and Linear Quantities}
+Angular variables are closely related to linear variables. From our definition of angular displacement, 
+$$d \theta = \frac{d s}{r}$$
+Dividing both sides of the equation by $d t$, the time interval during which the rotation occurs, yields
+$$\frac{d \theta}{d t} = \frac{1}{r} \frac{d s}{d t}$$
+When $d t$ is very small, the angle $d \theta$ through which the object rotates is also small
+and the ratio $\frac{d \theta}{d t}$ is close to the instantaneous angular speed $\omega$. On the other
+side of the equation, similarly, the ratio $\frac{d s}{d t}$ approaches the instantaneous linear speed v for small values of $d t$. Hence, when $d t$ gets arbitrarily small, the preceding equation is equivalent to:
+$$\omega = \frac{v}{r}$$
+\begin{form}[Linear and rotational relation]
+The formulas for calculating linear quantities from those that are angular, and vice versa, are:
+$$v_t = r \omega$$
+$$a_t = r \alpha$$
+\end{form}

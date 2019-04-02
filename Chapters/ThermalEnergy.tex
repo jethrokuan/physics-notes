@@ -1,0 +1,103 @@
+\section{Energy in Thermal Processes}
+In this chapter, we will discuss temperature changes(energy transfer) in thermal processes.
+
+Experiments showed to a certain extent that the conservation of energy rule seemed to apply only for certain kinds of mechanical systems. Experiments conducted showed that the sum of the gravitational energy and kinetic energy was not constant. Some of it were converted to heat energy, rising the temperature of the object. We will deal with this scenarios in this chapter.
+
+\subsection{Heat and Internal Energy}
+There is a difference between the terms internal energy, and heat. In fact, the differences are major, so major that the terms internal energy and heat cannot be used interchangeably.
+
+Heat is the transfer of energy between a system and the environment, because of a temperature difference between them.
+
+Internal energy $U$ is the energy associated with the microscopic components of a system's the atoms and molecules of the system. The internal energy includes kinetic and potential energy associated with the random translational, rotational, and vibrational motion of the particles that make up the system, and any potential energy bonding the particles together.
+
+The calorie had been defined as \textbf{the amount of energy required to raise the temperature of water by $1^\circ C$}
+$$1 cal = 4.186J$$
+Scientists agreed that since heat was a direct measure of the transfer of energy, As such, the SI unit should be Joule.
+
+\subsection{Specific Heat}
+Previously, the historical definition of the calorie was the amount of energy necessary to raise the temperature of a specific substance -- water -- by 1 degree. This amount was $4.186J$. Rasing the temperature of different substances by one degree would require different amount of energy.
+
+\begin{defi}[Specific Heat]
+If a quantity of energy Q is transferred to a substance m, changing its temperature from $T_i$ to $T_f$, the \textbf{specific heat} of the substance, denoted by $c$, is defined by
+$$c=\frac{Q}{m\left(T_f-T_i\right)}$$
+\end{defi}
+
+From the definition of specific heat, we can easily see that the energy $Q$ needed to raise the temperature of a system of mass $m$ by temperature $\Delta t$ is:
+
+\begin{form}[Energy Required to Raise Temperature]
+$$Q=mc\Delta T$$
+\end{form}
+
+A method to determine the specific heat of a substance is \textbf{calorimetry}. This process involves heating up a substance, and then putting it into cold water. Assuming that the system is isolated, it is possible to calculate the amount of energy invested into changing the temperature of the substance, and thus use this information to calculate the specific heat.
+
+\subsection{Latent Heat and Phase Change}
+We use the term \textbf{phase} to describe a specific state of matter, such as solid, liquid and gas.
+The compound $H_2O$ exists as ice in the solid phase, water in the liquid phase, and steam in the gaseous state. A transistion from one phase to another is called \textit{phase transition}.
+
+We know that it takes energy to change from one state to another. This is obvious because at the phase transistion, though there is no temperature change, energy is constantly invested in this process. As such this process consumes energy. Physicists aim to quantify this amount. They call the amount of energy required per unit mass for the phase transistion, \textbf{heat of fusion} or \textbf{latent heat of fusion}, and this is denoted by $L_f$.
+
+By the definition of the value $L_f$, the amount of energy $Q$ required, then, to change the state of a substance of mass $m$, is then
+\begin{form}[Energy Required for Phase Transistion]
+$$Q=mL_f$$
+\end{form}
+
+\subsection{Mechanisms for Heat Transfer}
+We have talked about conductors and insulators, materials that permit or prevent heat transfer between bodies. In this section, we will investigate the mechanisms in which heat is transferred, and the rate of which it is transferred.
+
+The three mechanisms for heat transfer are:
+\begin{enumerate}
+\item Conduction
+\subitem Occurs within a body or between two bodies in contact
+\item Convection
+\subitem Depends on the motion of mass from one region of space to another (such as hot air rises)
+\item Radiation
+\subitem Heat transfer by electromagnetic radiation
+\end{enumerate}
+
+We will now go through each single mechanism more in depth.
+
+\subsection{Conduction}
+On the atomic level, atoms in the hotter regions have higher kinetic energy, than those atoms at the cooler end. As such these atoms jostle and transfer some of their energy to the neighbours. These neighbours continue the transfer of energy to their cooler neighbouring atoms. This happens until energy will no longer be transferred (i.e. they are in thermal equilibrium). This process is called \textbf{conduction}.
+
+When a quantity $dQ$ is transferred over in a time interval of $dt$, the rate of heat flow is $\frac{dQ}{dt}$. This is also known more commonly by scientists as \textbf{heat current}, often denoted by $H$. Experiments show that heat current is proportional to the cross--sectional area $A$, to the temperature difference $T_H - T_C$ and is inversely proportional to the length of the rod $L$.
+
+From these experiments, we can obtain a relationship between heat current and all the above parameters. We now introduce a constant, the thermal conductivity of the material, denoted by $k$.
+
+\begin{form}[Thermal Conductivity of a Material]
+$$H=\frac{dQ}{dt}=kA\frac{T_H-T_C}{L}=kA\left(T_{grad}\right)$$
+\end{form}
+
+As seen from above, we introduced a new term, $T_{grad}$. This is the \textbf{temperature gradient}.
+
+Engineers often use the term \textbf{thermal resistance} for buildings. The thermal resistance $R$ of a slab of material with area $A$ is defined so that the heat current H through the slab is:
+\begin{defi}[Thermal Resistance]
+$$H=\frac{A\left(T_H-T_C\right)}{R}$$
+\end{defi}
+
+Comparing to the previous equation, we can obtain a relationship between thermal resistance and thermal conductivity of a material.
+$$R=\frac{L}{k}$$
+where L is the thickness of the slab.
+\subsection{Convection}
+Convection is the transfer of heat by mass motion of the fluid from one region of space to another. Familiar examples would be hot air that rises. Conective heating is a very complicated process, and physicists have not found any equation to relate the relevant parameters.
+
+However, these are some experimental facts:
+\begin{enumerate}
+\item The heat current due to convection is inversely proportional to surface area.
+\item Viscosity of fluids shows natural convection near a stationary surface, giving a surface film that on a vertical surface typically has an insulating value of 0.7. Forced convection decreases the thickness of this film, increasing the rate of heat transfer.
+\item The heat current due to convection is found to be approximately proportional to $\frac{5}{4}$ power of the temperature difference between the surface and the main body of the fluid.
+\end{enumerate}
+\subsection{Radiation}
+Radiation is the transfer of heat through electromagnetic waves, such as visible light, infrared and ultraviolet radiation. This mechanism of heat transfer is unique, in that since electromagnetic waves are transverse, it was possible for this heat transfer to occur even if it was vacuum between the bodies.
+
+It is common misunderstanding, that since nothing can be seen at low temperatures. However, every body emits energy. At lower temperatures, the heat is radiated normally in the form of infrared waves. As the temperature rises, the wavelengths shift to shorter values, so at high temperatures the radiation contains enough visible light to appear "white--hot".
+
+The rate of energy radiation from a surface is proportional to the surface area A. The rate increases very rapidly with temperature, depending on the fourth power of the absolute (Kelvin) temperature. The rate also depends on the nature of the surface; this dependence is described by a quantity e called the emissivity. A dimensionless number between 0 and 1, it represents the ratio of the rate of radiation from a particular surface to the rate of radiation from an equal area of an ideal radiating surface at the same temperature. Emissivity also depends some--what on temperature. Thus the heat current H = dQ/dt due to radiation from a surface area A with emissivity e at absolute temperature T can be expressed as
+\begin{form}[Heat current in radiation]
+$$H=Ae\sigma T^4$$
+\end{form}
+Where $\sigma$ is a fundamental physical constant, the Stefan--Boltzmann constant, This relationship is called the \textbf{Stefan--Boltzmann law}. The current best numerical value for $\sigma$ is
+$$\sigma=5.670400(40)\times 10^{-8} W/m^2\cdot K^4$$
+
+While a body at absolute temperature T is radiating, its surroundings at temperature T. are also radiating, and the body absorbs some of this radiation. If it is in thermal equilibrium with its surroundings, $T=T_S$ and the rates of radiation and absorption must be equal. For this to be true, the rate of absorption must be given in general by $H =Ae\sigma T_s^4$. Then the net rate of radiation from a body at temperature T with surroundings at temperature T, is
+$$H_{net}=Ae\sigma T^4 - Ae\sigma  T_s^4=Ae\sigma\left(T^4-T_s^4\right)$$
+In this equation a positive value of H means a net heat flow out of the body. The above equation shows that for radiation, as for conduction and convection, the heat current depends on the temperature difference between two bodies.

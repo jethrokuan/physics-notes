@@ -1,0 +1,142 @@
+\section{The Laws of Thermodynamics}
+In this section, we further expand on the first law of thermo dynamics discussed earlier on.
+
+The second law of thermodynamics constrains the first law by establishing which processes allowed by the first law actually occur. For example, the second law tells us that energy never flows by heat spontaneously from a cold object to a hot object. One important application of this law is in the study of heat engines (such as the internal combustion engine) and the principles that limit their efficiency.
+\subsection{Work in Thermodynamic Processes}
+Energy can be transferred to a system by heat and by work done on the system. In most cases of interest treated here, the system is a volume of ideal gas, which is important for understanding engines. We need a method of obtaining the work done as a function of pressure and change and volume, and this formula is relatively simple.
+
+We let there be a system of pressure P, and a piston having pushed down a distance of $\Delta x$. Then,
+$W=-F\Delta x=-PA\Delta x$. We also know that the change in volume is $\Delta V=A\Delta x$, then we get
+
+\begin{form}[Expressing Work Done]
+The \textbf{work done W on a gas} at constant pressure is given by
+$$W=P\Delta V$$
+where P is the pressure throughout the gas and $\Delta V$ is the change in volume of the gas during the process.
+\end{form}
+
+\subsection{Paths Between Thermodynamic States}
+We have seen thermodynamic processes which involve change in volume and change in pressure. It is useful to plot a pressure against volume graph, which allows us to see the amount of work done easily.
+
+The work done throughout the entire process, can be calculated by finding the area under the graph, or rather enclosed by the graph, where pressure is the y-axis, while volume is the x-axis.
+
+\subsection{First Law of Thermodynamics}
+The \textbf{first law of thermodynamics} is a law regarding energy conversion. It relates internal energy to energy transfers during heat gain and work done. In fact, the previous two are the only methods of change in internal energy.
+
+As such, by conservation of energy, we get:
+
+\begin{defi}[First Law of Thermodynamics]
+If a system undergoes a change from an initial state to a final state, where $Q$ is the energy transferred to the system by heat and $W$ is the work done on the system, then the change in internal energy can be obtained from the following equation:
+$$\Delta U= U_f-U_i=\Delta Q+\Delta W$$
+\end{defi}
+
+It is important to note that the quantity $Q$ is positive when energy is \textbf{TRANSFERRED INTO} the system, and negative when energy is \textbf{TRANSFERRED OUT} of the system. Similarly, as stated earlier, work done on the system is positive, and work done by the system is negative.
+
+Sometimes, it is also important to realise that in an isolated system, the change in internal energy is 0. as such, the energy conversions from heat to work done and vice versa are due to each other.
+
+Recall the equation describing the amount of internal energy of an ideal gas:
+$$U=\frac{3}{2}nRT$$
+This expression is only valid for a monoatomic gas, meaning the gas is only made up of single atoms. Then the change in internal energy of the gas is:
+$$\Delta U = \frac{3}{2}nR\Delta T$$
+
+\subsection{Special Processes in Thermodynamics}
+There are four basic types of thermal processes, which will be studied in this section.
+
+\subsection{Isobaric Processes}
+From the name, it is easy to tell that isobaric processes are thermodynamic processes in which the pressure remains constant. (You would know this if you studied Geography). An expanding gas does work on the environment,
+$$W_{env}=P\Delta V$$
+$$Q=\Delta U-W=\Delta U + P\Delta V$$
+$$Q=\frac{3}{2}nR\Delta T + nR\Delta T=\frac{5}{2}nRT=nC_p\Delta T$$
+where $C_p$ is the molar heat capacity for constant pressure, $C_p=\frac{5}{2}R$.
+
+\subsection{Adiabatic Processes}
+An \textbf{adiabatic process} is defined as one whereby there is no heat transfer out or into the system (i.e. $\Delta Q=0$). This can be attained by surrounding the system with a thermally insulating material. Applying the first law of thermodynamics, we get:
+$$\Delta U = -\Delta W$$
+This equation can be easily interpreted from the different scenarios. When the system does work on the surroundings, the total internal energy would decrease ($W=0$).
+
+\subsection{Isochoric Processes}
+An \textbf{isochoric process} is a process in which volume remains constant. We go back to the ideal gas law:
+$$PV=nRT$$
+$$V=nR\left(\frac{T}{P}\right)$$
+This means that the value $\frac{T}{P}$ is a constant: Temperature change in the process is equivalent to pressure change.
+
+\subsection{Isothermal Processes}
+An \textbf{isothermal process} is one in which temperature remains constant. Again, we go back to the ideal gas law:
+$$PV=nRT$$
+$$T=\frac{PV}{nR}$$
+This means that $PV$ remains constant throughout the process. As such, we get that the pressure is inversely proportional to the volume of the gas.
+
+Recall that temperature is a direct measure of the amount of kinetic energy of the gas. If temperature is constant, then the internal energy of the system is a constant: $\Delta U=0$
+
+As a result we get:
+$$\Delta Q=\Delta W$$
+
+\subsection{Heat Engines}
+Heat has been, since the dawn of time, a very potent source of energy. Heat can be derived from the sun's radiation, the earth's geothermal energy etc. As such, it is important to understand how to take heat from a source and convert it into mechanical energy to do work. This machinery is called a \textbf{heat engine}. In a heat engine, a quantity of matter undergoes addition or subtraction of heat. This matter is called the \textbf{working substance}.
+
+The simplest machines undergo \textbf{cyclic processes}. These processes eventually leave the working substance in the same state as originally started. This means that its initial and final internal energy is the same, i.e. $\Delta U=0$.
+
+As such, the first law of thermodynamics requires that:
+$$\Delta U=0=\Delta Q - \Delta W \text{and thus, } \Delta Q=\Delta W$$
+
+When analysing heat engines, it is helpful to think of two objects with which the working substance of the engine can interact. One of these, called the \textit{hot reservoir}, can give the working substance large amounts of energy at a constant temperature $T_H$ without losing much of its own heat. The other is called the \textit{cool reservoir}, which on the other hand can absorb large amounts of heat at a constant lower temperature $T_C$. 
+
+We denote the quantities of heat transferred from the hot reservoir and the cold reservoir $Q_H$ and $Q_C$ respectively. The image on the right shows the transfer of heat in a process.
+
+When an engine repeats the same cycle over and over, $Q_H$ and $Q_C$ represents the amount of energy absorbed and rejected respectively. The net heat Q absorbed per cycle is:
+$$Q=Q_H + Q_C=|Q_H|-|Q_C|$$
+The net work done is also:
+$$W=Q=|Q_H|-|Q_C|$$
+Ideally, we would like to convert all the heat into work, i.e. $|Q_C| = 0$, but experiments have shown that such a thermal engine is not possible to build, and that $|Q_C|$ can never be equal to zero. As such, we created a term to define the thermal efficiency of the engine, denoted by e.
+\begin{defi}[Thermal Efficiency of a Heat Engine]
+$$e=\frac{W}{Q_H}$$
+\end{defi}
+
+The thermal efficiency e represents the fraction of $Q_H$ that is actually converted into work.
+
+From here, we also arrive at our second law of thermodynamics:
+\begin{form}[Second Law of Thermodynamics]
+It is impossible to have the sole result the transfer of heat from a cooler to hotter body
+\end{form}
+
+The above statement is also known as the "refrigerator" statement.
+
+\subsection{Carnot Cycle}
+In 1824, french engineer Sadi Carnot created a hypothetical engine that has the maximum possible efficiency consistently to the second law of thermodynamics. This engine is called the \textbf{carnot engine}.
+
+Conversion of work to heat is a irreversible process; the purpose of a heat engine is a partial reversal of this process; the conversion of heat to work with as high an efficiency as possible. As such, for maximum efficiency, it is necessary to avoid all irreversible processes.
+
+Heat flow through a finite temperature drop is a irreversible process. Therefore, during heat transfer in the Carnot cycle there must be \textit{no} finite temperature difference. When the engine takes heat from the hot reservoir at temperature $T_H$ , the working substance of the engine must also be at $T_H$;	otherwise, irreversible heat flow would occur. Similarly, when the engine discards heat to the cold reservoir at $T_C$, the engine itself must be at $T_C$. That is, every process that involves heat transfer must be isothermal at either $T_H$ or $T_C$.
+
+Conversely, in any process in which the temperature of the working substance of the engine is intermediate between $T_H$ and $T_C$, there must be no heat transfer between the engine and either reservoir because such heat transfer could not be reversible. Therefore any process in which the temperature T of the working substance changes must be adiabatic.
+
+The carnot cycle consists of two adiabatic and isothermal processes each, all of which are reversible:
+\begin{enumerate}
+\item The process $A \rightarrow B$ is an isothermal expansion at temperature Th in which the gas is placed in thermal contact with a hot reservoir (a large oven, for example) at temperature $T_h$. During the process, the gas absorbs energy $Q_{h}$ from the reservoir and does work $W_{A \rightarrow B}$ in raising the piston.
+\item In the process $B \rightarrow C$, the base of the cylinder is replaced by a thermally non--conducting wall and the gas expands adiabatically, so no energy enters or leaves the system by heat. During the process, the temperature falls from $T_{H}$ to $T_{C}$.
+\item In the process $C \rightarrow D$, the gas is placed in thermal contact with a cold reservoir at temperature $T_{C}$ and is compressed isothermally at temperature $T_{C}$. During this time, the gas expels energy $Q_{C}$ to the cold reservoir and the work done on the gas is $W_{C \rightarrow D}$.
+\item In the final process, $D \rightarrow A$, the base of the cylinder is again replaced by a thermally nonconducting wall and the gas is compressed adiabatically. The temperature of the gas increases to $T_{H}$, and the work done on the gas is $W_{D \rightarrow A}$.
+\end{enumerate}
+
+\subsection{Entropy}
+Entropy is a state variable, denoted by S, which is related to the second law of thermodynamics.
+
+We begin by stating the definition of entropy:
+
+\begin{defi}[Entropy]
+Let $Q_{r}$ be the energy absorbed or expelled during a reversible, constant temperature process between two equilibrium states. Then the change in entropy during any constant temperature process connecting the two equilibrium states is defined as:
+$$\Delta S=\frac{Q_{r}}{T}$$
+SI units: joules/Kelvin (J/K)
+\end{defi}
+
+The concept of entropy had become widely-accepted because it's significance was enhanced when it was found that the entropy of the Universe increases in all natural processes. This is another fancy way of stating the second law of thermodynamics.
+
+\subsection{Entropy and Disorder}
+
+A large element of chance is inherent in natural processes. The spacing between trees in a natural forest, for example, is random; if you discovered a forest where all the trees were equally spaced, you would conclude that it had been planted. Likewise, leaves fall to the ground with random arrangements. It would be highly unlikely to find the leaves laid out in perfectly straight rows. We can express the results of such observations by saying that a disorderly arrangement is much more probable than an orderly one if the laws of nature are allowed to act without interference.
+
+Entropy originally found its place in thermodynamics, but its importance grew tremendously as the field of statistical mechanics developed. This analytical approach employs an alternate interpretation of entropy. In statistical mechanics, the behavior of a substance is described by the statistical behavior of the atoms and molecules contained in it. One of the main conclusions of the statistical mechanical approach is that isolated systems tend toward greater disorder, and entropy is a measure of that disorder.
+
+In light of this new view of entropy, Boltzmann found another method for calculating entropy through use of the relation
+$$S=k_{B}\ln W$$
+
+where $k_{B}= 1.38 \times 10^{23} J/K$ is Boltzmanns constant and W is a number proportional to the probability that the system has a particular configuration. The second law of thermodynamics is really a statement of what is most probable rather than of what must be.

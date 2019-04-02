@@ -1,0 +1,127 @@
+\section{Kinematics}
+Kinematics deal with the movement of objects, calculating distances, speeds or velocities. This topic is one of the easiest topics so I will not put much detail in it. More information can be found in other textbooks.
+\subsection{Unidirectional Motion}
+This section covers motion in \textbf{one direction only}. Many parts of this is also applied in projectile motion, which will be covered later.
+
+\subsection{Terminology}
+\begin{itemize}
+\item Displacement: Usually denoted by $x$ or $s$. In this set of notes, I will use $s$. This also means the net(directional) distance from the start point to the end point.
+\item Velocity: Denoted by $v$. Velocity is the \textbf{rate of change of position}. We usually denote initial velocity with $u$ and final velocity with $v$.
+\item Time: Denoted by $t$. 
+\item Acceleration: Denoted by $a$. It is the quantitative description of the rate of change in velocity over time.\footnote{College Physics, Young and Geller}
+\end{itemize}
+
+\subsection{Instantaneous and Average}\label{instant}
+Instantaneous simply means the value at that specific point in time. it is the gradient of the line tangent to the plotted graph. On the other hand, Average is the total average of the motion throughout its journey. Because velocity and acceleration are both \textbf{vector} quantities, the average velocity can be found by this equation, $\frac{s - s_\circ}{t}$ and similarly for acceleration, $\frac{v - u}{t}$.
+
+\begin{form}[Average Velocity]
+The average velocity of an object is
+$$v_x = \frac{\Delta s}{\Delta t}$$
+Over some time \textbf{t}.
+\end{form}
+
+\begin{form}[Instantaneous Velocity]
+The instantaneous velocity of an object is
+$$v_x = \lim_{d t \rightarrow 0} \frac{d s}{d t}$$
+\end{form}
+
+\begin{form}[Average Acceleration]
+The average acceleration of an object is
+$$v_x =\frac{\Delta v}{\Delta t}$$
+Over some time \textbf{t}.
+\end{form}
+
+\begin{form}[Instantaneous Acceleration] 
+The instantaneous acceleration of an object is
+$$v_x= \lim_{d t \rightarrow 0} \frac{d v}{d t}$$
+\end{form}
+\subsection{Equations}
+These equations deal with motion \textbf{with constant acceleration}. Those without constant acceleration require integration or differentiation to solve, which are not dealt with at the SJPO level, and thus, not touched on in this manuscript.
+
+\begin{form}[The Five Kinematics Equations]
+\begin{equation}
+\begin{split}
+v(t)&= u + at \quad \text{(Gives v if t is known)}\\ 
+s(t)&=s_{0}+u t+ \frac{1}{2}at^{2} \quad \text{(Gives s if t is known)}\\
+v^2 &= u^2 +2as \quad \text{(Gives v if s is known)}\\
+\end{split}
+\end{equation}
+\end{form}
+
+\subsection{Projectile Motion} \label{projectile}
+This section deals with \textbf{bidirectional} motion. The object can moves in a direction up, down, left or right. To solve this kind of questions, we usually resolve the components into their particular $x$ and $y$ components with their own  magnitude, and solve the simultaneous equations. Drawing free body diagrams, and using Newton's laws to aid in solving the question is also not uncommon.
+
+\subsection{A Projectile}
+A projectile is any object that is given an initial velocity and then follows a path determined entirely by the effects of gravitational acceleration and air resistance(which is usually neglected). 
+
+As mentioned earlier, the key to solving questions about projectile motion is that \emph{\textbf{we can treat the x and y coordinates separately}}. We note that the instantaneous acceleration(see section \ref{instant}). The assumption made in most questions about projectile motion is that the only force acting on the projectile is the gravitational force.
+
+Thus, we conclude that in most questions:
+\begin{form}[Projectile motion -- information in most questions]
+$$a_x = 0 \qquad and \qquad a_y = -g = -9.81 ms^{-2}$$
+By definition, the gravitational acceleration is \textbf{always positive} and thus, the acceleration has to be defined as --g.
+\end{form}
+
+\subsection{Equations}
+\begin{form}[Equations for projectile motion, assuming that $a_x = 0 \quad and \quad a_y = -g$]
+Considering the x motion, we substitute $a_x$ into and get:
+\begin{equation*}
+\begin{split}
+v_x &= u_ x \\
+s_x &= s_{\circ x} + u_x t = s_{\circ x} + v_x t\\ 
+\end{split}
+\end{equation*}
+
+For the y motion, we substitute $-g$ for $a$ and obtain:
+\begin{equation*}
+\begin{split}
+v_y &= u_y -gt\\
+s_y &= s_{\circ y} + u_y t - \frac{1}{2}gt^2
+\end{split}
+\end{equation*}
+\end{form}
+
+Usually it is the simplest to take the initial position (at time t=0) as the origin, in this case, $x_\circ$ and $y_\circ$ are both 0.
+
+Now we attempt to resolve the vectors into their various $x$ and $y$ components. This part requires a little knowledge of trigonometry(mainly TOA CAH SOH).
+
+Anyone with basic knowledge of trigonometry can see that:
+\begin{form}[Position and Velocity of a Projectile as functions of time t]
+\begin{equation*}
+\begin{split}
+s_x &= (v_\circ \cos \theta)t\\
+s_y &= (v_\circ \sin \theta)t - \frac{1}{2}gt^2\\
+v_x &= v_\circ \cos \theta\\
+v_y &= v_\circ \sin \theta - gt
+\end{split}
+\end{equation*}
+\end{form}
+
+\subsection{Uniform Circular Motion}
+When a particle moves along a curved path, the direction of its velocity changes. Thus, it \emph{must} have a component of acceleration perpendicular to the path, for its speed to be constant.
+
+When a particle moves in a circle with a constant speed, this motion is also called \textbf{Uniform Circular Motion}.
+Examples of uniform circular motion are:
+\begin{itemize}
+\item A car rounding a curve with constant radius at constant speed
+\item A satellite moving in a circular orbit
+\end{itemize}
+
+The component of acceleration perpendicular to the path causes the direction of the velocity to change, and is related in a simple way to the speed $v$ of the particle and the radius $R$ of the circle.
+
+First, we note that this is a different problem from the projectile--motion situation in section \ref{projectile} in which the acceleration was always straight down and was constant in both magnitude and acceleration. Here the acceleration is perpendicular to the velocity at each instant; as the direction of the velocity changes, the direction of acceleration also changes. The acceleration vector at each point of the path points toward the center of the circle(path).
+
+The formula for acceleration in uniform circular motion is as follows:
+\begin{form}[Acceleration in Uniform Circular Motion]
+The acceleration of an object in uniform circular motion is \emph{radical}, meaning that it always points to the center of the circle and is perpendicular to the object's velocity $\vec{v}$. We denote it as $\vec{a}_{rad}$; its magnitude $a_{rad}$ is given by:
+$$ a_{rad} = \frac{v^2}{R}$$
+\end{form}
+
+Because the acceleration of the object is always directed towards the center, the acceleration is also known as the \textbf{centripetal acceleration}, which in Latin means \emph{``seeking the center"}
+
+\subsection{Relativity in Kinematics}
+By the word relativity, I do not mean things related to the Lorentz Transformation, which will be discussed later in this manuscript. I mean what something appears to be relative to an object. 
+
+The formula is quite intuitive. Imagine a car moving towards you and you are running towards the car, it would seem like the car is moving faster than it is. This is the velocity of the car relative to you.
+
+If two objects are moving towards each other. the velocity are added to become the relative velocity. If they are moving in the same direction, they are subtracted. This is common sense, and I have put it down in layman terms for easy understanding, and this does not act as ``model answers'' in any test.

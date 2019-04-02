@@ -1,0 +1,91 @@
+\section{Work and Energy}
+
+\subsection{Introduction}
+\textbf{Energy} is one of the most important concepts in the world of science. In everyday use, energy is associated with the fuel needed for transportation and heating, with electricity for lights and appliances, and with the foods we consume. These associations, however, don't tell us what energy is, only what it does, and that producing it requires fuel. Our goal in this chapter, therefore, is to develop a better understanding of energy and how to quantify it.
+
+\textbf{Work} has a different meaning in physics than it does in everyday usage. In the physics definition, a programmer does very little work typing away at a computer. A mason, by contrast, may do a lot of work laying concrete blocks. In Physics, work is done \textbf{only if an object is moved through some displacement while a force is applied to it}.
+
+\begin{defi}[Obtaining Work]
+The Work $W$ done on an object by a Force of $F$ is given by:
+$$ W=Fd x$$
+where F is the magnitude of the force, $d x$ is the magnitude of the displacement, and $\vec{F}$ and $\vec{x}$ are in the same direction.
+
+The SI unit is \textbf{joule(J) = $newton \circ meter$ = $kg \circ m^2 s^2$}
+\end{defi}
+
+Complications in the definition of work occur when the force exerted on an object is not in the same direction as the displacement. Drawing a vector diagram, we resolve for the component that is parallel, which is $F\cos \theta$. Does, we get a more general definition:
+
+\begin{defi}[Obtaining Work -- General] \label{defi::workgen}
+The Work $W$ done on an object by a constant force $\vec{F}$ is given by:
+$$W=(F \cos \theta)d x$$
+where $F$ is the magnitude of the force, $d x$ is the magnitude of the object displacement, and $\theta$ is teh angle between the directions of $\vec{F}$ and $d \vec{x}$.
+\end{defi}
+
+\subsection{Kinetic Energy and the Work--energy theorem}
+Solving problems using Newton's second law(Refer to \ref{form:N2L}) can be difficult if the forces involved are complicated. An alternative is to relate the speed of an object to the net work done on it by external forces.
+
+We know that for a mass $m$ under the action of a constant net force $\vec{F}_{net}$ directed in the same direction, then:
+$$W_{net} = F_{net} d x = (ma)d x$$
+In the chapter of Kinematics, we have already stated the relationship $v^2 = v_\circ^2 + 2ad x$.
+Then this gives $ad x = \frac{v^2-v_\circ^2}{2}$
+
+Substituting back into the original equation, we get
+$$W_{net} = m \left(\frac{v^2-v_\circ^2}{2} \right)$$
+$$W_{net} = \frac{1}{2}mv^2 - \frac{1}{2}mv_\circ^2$$
+
+Then, the net work done on an object equals a change in a quantity of the form $\frac{1}{2}mv^2$
+
+\begin{form}[Calculating Kinetic Energy]
+The Kinetic Energy $KE$ of an object of mass $m$ is given by:
+$$KE = \frac{1}{2}mv^2$$
+SI Unit = Joule(J)
+\end{form}
+
+Then, we can have another formula:
+\begin{form}[Calculating Net Work Done]
+The net work done on an object $W$ is equal to the change in kinetic energy:
+$$W=KE_f - KE_i = \Delta KE$$
+where the change in the kinetic energy is due entirely to the object's change in speed, and is \textbf{independent of mass}.
+\end{form}
+
+\subsection{Gravitational Potential energy}
+An object with kinetic energy can do work on another object, just like moving a hammer can drive a nail through a wall. 
+
+Potential energy is a property of a \textbf{system}, rather than of a single object. Gravity is a conservative force, and for every conservative force a special expression called a potential energy function can be found.
+
+We apply the definition of work in Equation \ref{defi::workgen} to get:
+$$W_g = Fd \cos \theta = -mg(y_f - y_i)$$
+
+\begin{form}[Gravitational Potential Energy]
+The gravitational potential energy of a system consisting of the Earth and an object of mass $m$ near the Earth's surface is given by:
+$$ PE = mgh$$
+Where g is the gravitational acceleration constant($9.81ms^{-1}$) and h is the vertical height of the Earth's surface.
+\end{form}
+
+\subsection{Power}
+
+The rate at which energy is transferred is important in the design and use of practical devices, such as electrical appliances and engines of all kinds. The issue is particularly interesting for living creatures, since the maximum work per second, or power output, of an animal varies greatly with output duration. Power is defined as such:
+
+\begin{defi}[Definition of Power]\label{defi::Power}
+If an external force is applied to an object and if the work done by this force is in $W$ in the time interval $\Delta t$ then the \textbf{average power} delivered to the object during this interval is the work done divided by the time interval, or:
+$$P=\frac{W}{\Delta t}$$
+SI unit = Watts, W = J/s.
+\end{defi}
+ 
+ It is also sometimes useful to rewrite Definition \ref{defi::Power} as such:
+ \begin{form}[Power formula]
+ $$p=\frac{W}{\Delta t} = \frac{F \Delta x}{\Delta t} = Fv$$
+ \end{form}
+
+This is only true if the force exerted on the object to do work, is constant.
+ 
+ \subsection{Conservation of Energy}
+ In a closed system, the total energy is conserved, because energy cannot be created or destroyed.
+ 
+ This means that:
+ \begin{defi}[Conservation of energy]
+ Because the total amount of energy is conserved, the initial kinetic and potential energy adds up to be equal to the final kinetic potential energy, assuming no energy is lost during the process:
+ $$KE_i + PE_i = KE_f + PE_f$$
+ \end{defi}
+ 
+ There are also other forms of conservations, like conservation of momentum, which will be covered later in the next chapter.

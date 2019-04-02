@@ -1,0 +1,104 @@
+\section{Thermal Physics}
+
+\textbf{Thermal physics} is the study of temperature, heat, and how they affect matter. Quantitative descriptions of thermal phenomena require careful definitions of the concepts of temperature, heat, and internal energy. Heat leads to changes in internal energy and thus to changes in temperature, which cause the expansion or contraction of matter.
+
+Gases are critical in the harnessing of thermal energy to do work. Within normal temperature ranges, a gas acts like a large collection of non-interacting point particles, called an ideal gas. Such gases can be studied on either a macroscopic or microscopic scale. On the macroscopic scale, the pressure, volume, temperature, and number of particles associated with a gas can be related in a single equation known as the ideal gas law. On the microscopic scale, a model called the kinetic theory of gases pictures the components of a gas as small particles. This model will enable us to understand how processes on the atomic scale affect macroscopic properties like pressure, temperature, and internal energy.
+
+\subsection{Temperature and the $0^{th}$ Law of Thermodynamics}
+
+When placed in contact with each other, two objects at different initial temperatures will eventually reach a common intermediate temperature. If a cup of hot coffee is cooled with an ice cube, for example, the ice rises in temperature and eventually melts while the temperature of the coffee decreases. Understanding the concept of temperature requires understanding thermal contact and thermal equilibrium. Two objects are in thermal contact if energy can be 
+exchanged between them. Two  objects are in thermal equilibrium if they are in thermal contact and there is no net exchange of energy. The exchange of energy between two objects because of differences in their temperatures is called heat. Using these ideas, we can develop a formal definition of temperature. Consider two objects A and B that are not in thermal contact with each other, and a third object C that acts as a thermometer's a device calibrated to measure the temperature of an object. We wish to determine whether A and B would be in thermal equilibrium if they were placed in thermal contact. The thermometer (object C) is first placed in thermal contact with A until thermal equilibrium is reached, whereupon the reading of the thermometer is recorded. The thermometer is then placed in thermal contact with B, and its reading is again recorded at equilibrium. If the two readings are the same, then A and B are in thermal equilibrium with each other. If A and B are placed in thermal contact with each other, there is no net transfer of energy between them. We can summarize these results in a statement known as the\textbf{ zeroth law of thermodynamics (the law of equilibrium)}:
+
+\begin{defi}[Zeroth Law of Thermodynamics]
+If objects A and B are separately in thermal equilibrium with a third object C, then A and B are in thermal equilibrium with each other.
+\end{defi}
+
+\subsection{Ideal Gases}
+The properties of gases are important in a number of processes. It is important to note that these gases are asuumed to have these certain properties, and are thus considered ideal gases.
+
+The equation of state can be very complicated, but is found experimentally to be relatively simple if the gas is maintained at low pressure.
+
+A gas usually consists of a very large number of particles, so it is convenient to express the amount of gas in a given volume in terms of the number of moles, n. One mole of gas contains a fixed number of particles, and this number is the \emph{Avogadro's Constant}
+\begin{defi}[Avogadro's Constant]
+$$N_A = 6.02 \times 10^{23} \textrm{ particles/mole}$$
+\end{defi}
+
+Ideal gases follow the ideal gas law, which summarizes three scientist's experimental findings. They have found that if a cylinder contains an ideal gas, and the cylinder does not leak, then the number of moles of gas remained constant. If a gas is kept at constant temperature, then the pressure is inversely proportional to its volume(Boyle's Law) When the pressure of a gas is kept constant, the volume of the gas is directly proportional to the temperature (Charles' law). When the volume is kept constant, the pressure is directly proportional to the temperature(Gay-Lussac's Law). These different laws were all summarized to form the ideal gas law, stated below.
+
+\subsection{The Ideal Gas Law}
+\begin{defi}[The Ideal Gas Law]
+$$PV=nRT$$
+R is the constant for a specific gas that must be determined from experiments. As the pressure approaches zero, R becomes the same value for all gases: $R=8.31 J/mol K$
+\end{defi}
+
+As previously stated, the number of molecules contained in one mole of any gas is the Avogadro's number, $N_A = 6.02 \times 10^{23} \textrm{ particles/mole}$, so
+$$n=\frac{N}{N_A}$$
+where n is the number of moles and N is the number of molecules in the gas. With the above equation, we can rewrite the ideal gas law in terms of the total number of molecules as
+$$PV=nRT = \frac{N}{N_A}RT$$
+or
+$$PV=Nk_BT$$
+where
+$$k_B=\frac{R}{N_A} = 1.38 \times 10^-23 J/K$$
+is \textbf{Boltzmann's constant} this reformation is useful to relate the temperature of a gas to the average kinetic energy of particles in a gas.
+
+\subsection{The Kinetic Theory of Gases}
+ Using the previous model of an ideal gas, we will describe the \textbf{kinetic theory of gases}. With this theory we can interpret the pressure and temperature of an ideal gas in terms of microscopic variables. The kinetic theory of gases model makes the following assumptions:
+\begin{enumerate}
+\item \textbf{The number of molecules in the gas is large, and the average separation between them is large compared with their dimensions.} The fact that the number of molecules is large allows us to analyse their behaviour statistically.
+\item \textbf{The molecules obey Newton's laws of motion, but as a whole they move randomly.} By "randomly" it is meant that any molecule can move in any direction of equal probability.
+\item \textbf{The molecules interact only though short-range forces during elastic collisions.} This assumption is consistent with the ideal gas model.
+\item \textbf{The molecules make elastic collisions with the walls}
+\item \textbf{All molecules in the gas are identical}
+\end{enumerate}
+
+\subsection{Molecular Model for the Pressure of an Ideal Gas}
+This would be our first application of the kinetic theory. We first assume N molecules in a container of volume V. We use m to represent the mass of one molecule. The container is a cube with edges of length d.
+
+After colliding elastically with a wall. The molecule with originally a momentum of +mv changes to -mv, assuming that it was initially moving in the positive x direction.
+$$d p_x = mv_x-(-mv_x) = 2mv_x$$
+
+Then if $F_1$ is the magnitude of the average force exerted by a molecule of the wall in the time $d t$, then applying Newton's second law to the wall gives:
+
+$$F_1 = \frac{2mv_x}{d t} = \frac{2 mv_x}{d t}$$
+In order for the molecule to make two collisions with the same wall, it must travel a distance 2d along the x-direction in a time $d t$. Therefore the time interval between two collisions with the same wall is $d t=\frac{2d}{v_x}$ and the force imparted to the wall by a single molecule is
+$$F_1=\frac{2mv_x}{d t}=\frac{2mv_x}{2d/v_x}=\frac{mv_x^2}{d}$$
+
+The total force F exerted by all the molecules on the wall is found by adding the forces exerted by the individual molecules:
+$$F_{total} = \frac{m}{d}(v_{1x} ^2 +v_{2x} ^2 +\cdots)$$
+
+In this equation, $v_{1x}$ is the x-component of velocity of molecule 1.
+Note that the average value of the square of the velocity in the x-direction is
+$$\bar{v_x^2}=\frac{v_{1x}^2+v_{2x}^2 + \cdots}{N}$$
+
+where $\bar{v_x^2}$ is the average value of $v_x^2$. The total force on the wall can then be written as:
+$$F=\frac{Nm}{d}\bar{v_x^2}$$
+
+Now we focus on one molecule in the container traveling in some arbituary direction with velocity $\vec{v}$ and having components, $v_x$, $v_y$ and $v_z$. In this case, we must express the total force on the wall in terms of the speed of the moelcules rather than just a single component. The Pythagorean theorem relates the square of the speed to the square of these components according to the expression $v^2 = v_x^2 + v_y^2 + v_z^2$. Hence, the average value of $v^2$ for all the molecules in the container is related to the average values $\bar{v_x^2}$, $\bar{v_y^2}$ and $\bar{v_z^2}$ according to the expression $\bar{v^2} = \bar{v_x^2} +\bar{v_y^2}+\bar{v_z^2}$. Because the motion is completely random, the average values of $\bar{v_x^2}$, $\bar{v_y^2}$ and $\bar{v_z^2}$ are equal to each other. Using this fact and the earler equation for $\bar{v_x^2}$, we find that
+$$\bar{v_x^2} = \frac{1}{3}\bar{v^2}$$
+The total force on the wall, then is
+$$F=\frac{N}{3}\left(\frac{m\bar{v^2}}{d}\right)$$
+This equation allows us to find the total pressure exerted on the wall by dividing the force by the area:
+$$\frac{F}{A} = \frac{F}{d^2} = \frac{1}{3}\left(\frac{N}{d^3}m\bar{v^2}\right) = \frac{1}{3}\left(\frac{N}{V}\right)m\bar{v^2}$$
+$$P=\frac{2}{3}\left(\frac{N}{V}\right)\left(\frac{1}{2}m\bar{v^2}\right)$$
+
+The above equation says that \textbf{the pressure is proportional to the number of molecules per unit volume and to the average translational kinetic energy of a molecule, $\mathbf{\frac{1}{2}m\bar{v^2}}$.}
+
+\subsection{Molecular Interpretation of Temperature}
+Having related the pressure of a gas to the average kinetic energy of the molecules, we can now relate temperature to a description of the gas.
+$$PV = \frac{2}{3}N\left(\frac{1}{2}m\bar{v^2}\right)$$
+Comparing this equation with the equation of state for an ideal gas stated earlier, ($PV = Nk_BT$), we note that the left-hand sides are identical. Then we get:
+$$T = \frac{2}{3k_B}\left(\frac{1}{2}m\bar{v^2}\right)$$
+This means that \textbf{the temperature of a gas is a direct measure of the average molecular kinetic energy of a gas}
+
+Rearranging the above equation, we get:
+$$\frac{1}{2}m\bar{v^2} = \frac{3}{2}Nk_BT$$
+
+So the average translational kinetic energy per molecule is $\frac{3}{2}Nk_BT$. The total translational energy of N molecules of gas is simply N times the average energy per molecule,
+$$KE_{total}=N\left(\frac{1}{2}m\bar{v^2}\right) = \frac{3}{2}Nk_BT = \frac{3}{2}nRT$$
+where we earlier used $k_B=\frac{R}{N_A}$ for Boltzmann's constant and and $n=\frac{N}{N_A}$ for the number of moles in a gas. From this result, we see that \textbf{the total translational kinetic energy of a system of molecules is proportional to the absolute temperature of the system.}
+$$U=\frac{3}{2}nRT \textrm{ (monoatomic gas)}$$
+For diatomic and polyatomic molecules, additional possibilities of energy storage are available in the vibration and rotation of the molecule.
+
+The square root of $\bar{v^2}$ is called the \textbf{root--mean--square} (rms) speed of the molecules. We get
+$$v_{rms} = \sqrt{\bar{v^2}} = \sqrt{\frac{3k_BT}{m}} = \sqrt{\frac{3RT}{M}} $$
+where M is the molar mass in \emph{kilograms per mole} if R is given in SI units.
